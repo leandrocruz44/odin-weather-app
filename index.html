@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!doctype html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="container">
+        <header id="searchBar">
+            <form>
+                <input type="text" name="searchCity" id="searchCity">
+                <button type="submit" id="searchBtn">
+                    <img src="page-icons/search.svg" alt="">
+                </button>
+            </form>
+        </header>
+        <main>
+            <section id="main">
+                <div id="info">
+                    <div id="cityName">São Paulo</div>
+                    <div id="date">March 7 2023 | 19:09</div>
+                </div>
+                <div id="weather">
+                    <div id="mainTemp" class="weatherItem">
+                        <p id="temp">26ºC</p>
+                    </div>
+                    <div id="weatherIcon" class="weatherItem">
+                        <img src="weather-icons/day.svg" alt="">
+                    </div>
+                    <div id="weatherTitle" class="weatherItem">
+                        <p id="sky">Clear Sky</p>
+                        <p id="wind">Gentle Breeze</p>
+                    </div>
+                </div>
+            </section>
+            <section id="sideDetails">
+                <div id="feelsLike" class="sideItem">
+                    <div class="sideText">Feels Like</div>
+                    <div class="sideInfo">
+                        <p id="feelsLikeInfo">24.6ºC</p>
+                    </div>
+                </div>
+                <div id="humidity" class="sideItem">
+                    <div class="sideText">Humidity</div>
+                    <div class="sideInfo">
+                        <p id="humidityInfo">55%</p>
+                    </div>
+                </div>
+                <div id="cloudness" class="sideItem">
+                    <div class="sideText">Cloudness</div>
+                    <div class="sideInfo">
+                        <p id="cloudnessInfo">60%</p>
+                    </div>
+                </div>
+            </section>
+            <section id="sideSun">
+                <div id="sunrise" class="sunInfo">
+                    <p class="sunText">Sunrise</p>
+                    <p id="sunriseInfo">6:09</p>
+                </div>
+                <div id="sunset" class="sunInfo">
+                    <p class="sunText">Sunset</p>
+                    <p id="sunsetInfo">18:29</p>
+                </div>
+            </section>
+        </main>
+        <aside id="future">
+
+        </aside>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
