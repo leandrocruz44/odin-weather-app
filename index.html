@@ -14,29 +14,27 @@
 <body>
     <div id="container">
         <header id="searchBar">
-            <form>
-                <input type="text" name="searchCity" id="searchCity">
-                <button type="submit" id="searchBtn">
-                    <img src="page-icons/search.svg" alt="">
-                </button>
-            </form>
+            <input type="text" name="searchCity" id="searchCity" placeholder="Search">
+            <button type="submit" id="searchBtn">
+                <img src="page-icons-images/search.svg" alt="">
+            </button>
         </header>
         <main>
             <section id="main">
                 <div id="info">
-                    <div id="cityName">São Paulo</div>
-                    <div id="date">March 7 2023 | 19:09</div>
+                    <div id="cityName"></div>
+                    <div id="date"></div>
                 </div>
                 <div id="weather">
                     <div id="mainTemp" class="weatherItem">
-                        <p id="temp">26ºC</p>
+                        <p id="temp"></p>
                     </div>
                     <div id="weatherIcon" class="weatherItem">
-                        <img src="weather-icons/day.svg" alt="">
+                        <img src="" alt="Weather Icon" id="img">
                     </div>
                     <div id="weatherTitle" class="weatherItem">
-                        <p id="sky">Clear Sky</p>
-                        <p id="wind">Gentle Breeze</p>
+                        <p id="sky"></p>
+                        <p id="skyCond"></p>
                     </div>
                 </div>
             </section>
@@ -44,30 +42,30 @@
                 <div id="feelsLike" class="sideItem">
                     <div class="sideText">Feels Like</div>
                     <div class="sideInfo">
-                        <p id="feelsLikeInfo">24.6ºC</p>
+                        <p id="feelsLikeInfo"></p>
                     </div>
                 </div>
                 <div id="humidity" class="sideItem">
                     <div class="sideText">Humidity</div>
                     <div class="sideInfo">
-                        <p id="humidityInfo">55%</p>
+                        <p id="humidityInfo"></p>
                     </div>
                 </div>
                 <div id="cloudness" class="sideItem">
                     <div class="sideText">Cloudness</div>
                     <div class="sideInfo">
-                        <p id="cloudnessInfo">60%</p>
+                        <p id="cloudnessInfo"></p>
                     </div>
                 </div>
             </section>
             <section id="sideSun">
                 <div id="sunrise" class="sunInfo">
                     <p class="sunText">Sunrise</p>
-                    <p id="sunriseInfo">6:09</p>
+                    <p id="sunriseInfo"></p>
                 </div>
                 <div id="sunset" class="sunInfo">
                     <p class="sunText">Sunset</p>
-                    <p id="sunsetInfo">18:29</p>
+                    <p id="sunsetInfo"></p>
                 </div>
             </section>
         </main>
