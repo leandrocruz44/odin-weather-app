@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!doctype html>
+    <link rel="shortcut icon" href="page-icons-images/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
@@ -13,13 +14,17 @@
 </head>
 <body>
     <div id="container">
-        <header id="searchBar">
-            <input type="text" name="searchCity" id="searchCity" placeholder="Search">
-            <button type="submit" id="searchBtn">
-                <img src="page-icons-images/search.svg" alt="">
-            </button>
+        <header id="logo">
+            <img src="page-icons-images/cloud-logo.svg" alt="">
+            WeatherApp
         </header>
         <main>
+            <section id="searchBar">
+                <input type="text" name="searchCity" id="searchCity" placeholder="Search">
+                <button type="submit" id="searchBtn">
+                    <img src="page-icons-images/search.svg" alt="">
+                </button>
+            </section>
             <section id="main">
                 <div id="info">
                     <div id="cityName"></div>
@@ -73,6 +78,11 @@
 
         </aside>
     </div>
+    <footer>
+        <p>
+            Created for <strong><a href="https://www.theodinproject.com/">The Odin Project</a></strong> by <strong><a href="https://github.com/leandrocruz44"><img src="page-icons-images/github-logo.svg" alt=""> Leandro Cruz</a></strong>
+        </p>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
