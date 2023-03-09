@@ -3,9 +3,6 @@
     src: url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 }
 
-@import url();
-
-
 * {
     margin: 0;
     padding: 0;
@@ -16,21 +13,28 @@
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(page-icons-images/outrun-image.jpg);
+    background-color: lightslategrey;
+}
+
+#wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: lightslategrey;
-    background-image: url(page-icons-images/outrun-image.jpg);
+    justify-content: space-between;
     background-position: left;
 }
 
 #container {
     width: 600px;
-    height: 650px;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: rgba(104, 113, 231, 0.911);
     margin-top: 25px;
@@ -41,6 +45,7 @@ header {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     color: black;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -182,12 +187,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 98vw;
+    width: auto;
     height: 40px;
     margin-top: 50px;
     background-color: black;
     text-align: center;
-    border-radius: 10px;
 }
 
 a:link {
